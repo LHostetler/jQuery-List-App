@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>List App</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<style>
+		img.fullscreen {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div data-role="page" id="photos">
+<header data-role="header">
+	<h1>List App</h1>
+	<a href="#">Home</a>
+</header>
+<article data-role="content">
+	<ul data-role="listview" data-filter="true">
+		<li>
+			<a href="#dog">
+			<h1>Dog</h1>
+			<img src="dog.jpg" class="fullscreen" alt="Min Pin" />
+			<p>It's a Tanzanian dachsund.</p>
+			</a>
+		</li>
+		<li>
+			<a href="#gummies">
+			<h1>Gummy Bears</h1>
+			<img src="gummybears.jpg" class="fullscreen" alt="Gummy Bears" />
+			<p>Slightly less painful than Swedish Fish.</p>
+			</a>
+		</li>
+	</ul>
+</article>
+<footer data-role="footer">
+	<nav data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#" data-icon="home">Home</a></li>
+			<li><a href="#" data-icon="grid">Photos</a></li>
+			<li><a href="#" data-icon="info">Info</a></li>
+		</ul>
+	</nav>
+</footer>
+</div><!-- end of page -->
+
+<div data-role="page" id="dog">
+<header data-role="header">
+	<h1>Dog</h1>
+	<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+</header>
+<img src="dog.jpg" alt="Dog Picture" />
+</div><!-- end of page -->
+
+<div data-role="page" id="gummies">
+<header data-role="header">
+	<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+	<h1>Gummy Bears</h1>
+</header>
+<img src="gummybears.jpg" alt="Gummy Bears" />
+</div><!-- end of page -->
+
+<div data-role="page" id="fb">
+<header data-role="header">
+	<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+	<h1>Facebook</h1>
+</header>
+<img src="fb.jpg" alt="Facebook" />
+</div><!-- end of page -->
+
+</body>
+</html>
